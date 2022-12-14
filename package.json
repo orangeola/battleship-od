@@ -1,5 +1,5 @@
 {
-  "name": "skeleton",
+  "name": "battleship",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
     "css-loader": "^6.7.1",
     "eslint": "^8.23.0",
     "eslint-config-airbnb-base": "^15.0.0",
