@@ -3,16 +3,17 @@ const newShip = (l) => {
   let hits = 0;
   let sunk = false;
 
-  function hit() {
-    hits += 1;
-    return hits;
-  }
-
   function isSunk() {
     if (hits === length) {
       sunk = true;
     }
     return sunk;
+  }
+
+  function hit() {
+    hits += 1;
+    isSunk();
+    return hits;
   }
 
   function stats() {

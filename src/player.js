@@ -1,6 +1,4 @@
-const newPlayer = (type) => {
-  const player = type;
-
+const newPlayer = () => {
   function makeMove(board, coords = null) {
     if (coords === null) {
       // computer player
