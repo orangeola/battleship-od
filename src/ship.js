@@ -6,6 +6,7 @@ const newShip = (l) => {
   function isSunk() {
     if (hits === length) {
       sunk = true;
+      alert("sunk");
     }
     return sunk;
   }

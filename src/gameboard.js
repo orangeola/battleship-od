@@ -22,8 +22,10 @@ const newGameboard = () => {
   function receiveAttack(x, y) {
     if (typeof board[x][y] === "number") {
       board[x][y] = 1;
+      console.log("Miss");
     } else {
       board[x][y].hit();
+      console.log("Hit");
     }
   }
 

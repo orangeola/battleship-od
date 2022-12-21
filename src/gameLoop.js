@@ -19,7 +19,7 @@ const gameFlow = () => {
   botBoard.addShip(newShip(5), [0, 0], "right");
   botBoard.addShip(newShip(4), [3, 2], "down");
   botBoard.addShip(newShip(3), [6, 0], "down");
-  botBoard.addShip(newShip(3), [9, 6], "right");
+  botBoard.addShip(newShip(3), [6, 6], "right");
   botBoard.addShip(newShip(2), [5, 9], "down");
 
   const allNodes = document.getElementsByClassName("node");
