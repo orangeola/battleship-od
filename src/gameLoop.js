@@ -22,7 +22,15 @@ const gameFlow = () => {
   botBoard.addShip(newShip(3), [9, 6], "right");
   botBoard.addShip(newShip(2), [5, 9], "down");
 
-  // all squares of each board to need have eventlisteners added
+  const allNodes = document.getElementsByClassName("node");
+  for (let i = 100; i < 200; i++) {
+    allNodes[i].addEventListener("click", () => {
+      allNodes[i].style.backgroundColor = "blue";
+      botBoard.receiveAttack(i.toString()[1], i.toString()[2]);
+    });
+  }
+
+  // all squares of board2 to need have eventlisteners added
   // for a click to correspond to their coordinates
   // every square click actaives player.makeMove()
   // then run gameEnd on the board attacked to check
